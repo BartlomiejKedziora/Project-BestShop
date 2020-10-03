@@ -351,8 +351,122 @@ a {
 
 /*pricing*/
 
+.pricing {
+    height: 600px;
+}
+.pricing .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+.pricing-header {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
 
+.pricing-tables {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pricing-tables-frame1, .pricing-tables-frame2, .pricing-tables-frame3 {
+    text-align: center;
+    height: 100%;
+    width: 370px;
+    border: 1px solid black;
+    border-radius: 18px;
+    padding-top: 34px;
+    position: relative;
+}
+
+.pricing-tables-pack {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.pricing-tables-price {
+    font-size: 46px;
+    font-family: var(--secondary-font);
+    font-weight: 300;
+}
+
+.pricing-tables-limit {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.pricing-inlcusions li {
+    font-size: 14px;
+    font-family: var(--secondary-font);
+    margin-bottom: 25px;
+}
+
+.pricing-btn {
+    font-size: 13px;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    padding: 16px 64px;
+    color: white;
+    border: none;
+    border-radius: 23px;
+    margin-top: 50px;
+    position: absolute;    
+}
+
+.pricing-tables-frame1 {
+    border-color: #FB3B64 ;
+}
+
+.pricing-tables-frame1 p {
+    color: #FB3B64;
+}
+
+.pricing-tables-frame1 a {
+    background-color:  #FB3B64;
+    bottom: 0;
+    left: 0;
+    transform: translate(60%, 50%);
+}
+
+.pricing-tables-frame2 {
+    border-color: #08A6E4 ;
+    height: 120%;
+    width: 410px;
+    box-shadow: 5px 10px 27px var(--primary-color);
+}
+
+.pricing-tables-frame2 p {
+    color:#08A6E4;
+}
+
+.pricing-tables-frame2 a {
+    background-color:  #08A6E4;
+    bottom: 0;
+    left: 0;
+    transform: translate(75%, 50%);
+}
+
+.pricing-tables-frame3 {
+    border-color: #55DFB4 ;
+}
+
+.pricing-tables-frame3 p {
+    color:#55DFB4;
+}
+
+.pricing-tables-frame3 a {
+    background-color:#55DFB4;
+    bottom: 0;
+    left: 0;
+    transform: translate(60%, 50%);
+}
 
 /*contact*/
 
