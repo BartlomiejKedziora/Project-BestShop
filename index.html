@@ -34,7 +34,7 @@
   </header>
 
   <main>
-    <section class="stats">
+    <section class="stats" id="stats">
       <div class="stats container">
         <h2 class="stats-header">The most popular sales platform in country</h2>
         <div class="stats-data">
@@ -63,7 +63,7 @@
       </div>
     </section>
 
-    <section class="benefits">
+    <section class="benefits" id="benefits">
       <div class="benefits container">
         <div class="benefits-block">
           <div class="benefits-block-text">
@@ -73,7 +73,7 @@
           </div>
           <div class="benefits-block-img">
             <div class="benefits-block-1-img">
-              <img src="assets/Macbook.png">
+            <img src="assets/Macbook.png">
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@
             <div class="benefits-block-blueline"></div>
           </div>
         </div>
-        <div class="benefits-block">
+        <div class="benefits-block-separated">
           <div class="benefits-block-text">
             <h3 class="benefits-block-header">Increase recognition your brand!</h3>
             <p class="benefits-block-content">Quasi quaerat, unde impedit corrupti nisi minima a praesentium dicta facilis ipsam iste laboriosam nobis ea. Explicabo, dolorem!</p>
@@ -108,7 +108,7 @@
 
     </section>-->
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact container">
         <div class="contact-info">
           <h3 class="contact-info-header">Any questions?</h3>
@@ -121,16 +121,22 @@
           </div>
         </div>
         <form class="contact-form">
-          <label for="name">Name</label>
-          <input type="text">
-
-          <label for="email">Email</label>
-          <input type="email">
-
-          <label for="checkbox"></label>
-          <input type="checkbox">
-
-          <button type="submit">Send</button>
+          <div class="contact-form-space">
+            <label for="name">Name</label>
+            <input type="text">
+          </div>
+          <div class="contact-form-space">
+            <label for="email">Email</label>
+            <input type="text">
+          </div>
+          <div class="contact-form-checkbox">
+            <label class="checkbox-label">
+            <input type="checkbox">
+            <span class="checkbox"></span>
+            <p class="checkbox-text">Potwierdzam, że wykonałem ten projekt samodzielnie z minimalnym wsparciem dostępnych na kursie materiałów szkoleniowych oraz niewielkiej weryfikacji z zaproponowanym rozwiązaniem.</p>
+            </label>
+          </div>
+          <button class="contact-form-btn" type="submit">Send</button>
         </form>
       </div>
     </section>
