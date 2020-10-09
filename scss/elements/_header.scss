@@ -1,0 +1,48 @@
+/*header,log, nav*/
+
+.page-header {
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.page-header .container {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header-logo {
+    font-size: 32px;
+    color: var(--primary-color);
+    font-weight: 300;    
+    margin-left: 50px;
+}
+
+.page-header-nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.page-header-nav-menu li {
+    height: 70px;
+    border-bottom: 4px solid white;
+    padding: 25px 50px;
+    color: var(--color-grey);
+}
+
+.page-header-nav-menu li:hover {
+    border-bottom: 4px solid var(--primary-color);
+    color: black;
+}
+
+.page-header-nav-menu a {
+    color: inherit;
+    font-family: var(--secondary-font);
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 100%;
+}

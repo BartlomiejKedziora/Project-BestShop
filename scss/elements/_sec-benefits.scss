@@ -1,0 +1,141 @@
+/*benefits*/
+
+.benefits .container {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-grey-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 250px;
+}
+
+.benefits-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-top: 37px;
+}
+
+.benefits-block-text {
+    width: 50%;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.benefits-block-img {
+    width: 50%;
+    margin-left: 36px;
+    margin-right: 36px;
+    position: relative;
+}
+
+.benefits-block-header {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.benefits-block-content {
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    margin-bottom: 50px;
+}
+
+.benefits-block-redline {
+    width: 75%;
+    display: block;
+    border-bottom: 4px solid #FB3B64;
+}
+
+.benefits-block-blueline {
+    width: 75%;
+    display: block;
+    border-bottom: 4px solid #08A6E4;
+}
+
+.benefits-block-greenline {
+    width: 75%;
+    display: block;
+    border-bottom: 4px solid #55DFB4;
+}
+
+.benefits-block-img img {
+    position: relative;
+    z-index: 2;
+    width: 350px;
+    height: auto;
+}
+
+.benefits-laptop .benefits-block-img {
+    margin: 50px 110px 40px 0px;
+
+}
+
+.benefits-laptop .benefits-block-img::before {
+    content: "";
+    display: block;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    background-color: #FB3B64 ;
+    border-radius: 40px;
+    transform: rotate(45deg);
+    top: -30px;
+    right: 0;
+}
+
+.benefits-phone .benefits-block-img {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #08A6E4;
+    margin: 30px 10px 20px 60px;
+
+}
+
+.benefits-block-3-img img {
+    height: 350px;
+    width: 350px;
+    object-fit: contain;
+}
+
+.benefits-block-3-img {
+    height: 350px;
+    width: 350px;
+    background-color: #55DFB4;
+}
+
+.benefits-block-separated {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 37px;
+}
+
+.benefits-block-separated div:first-child {
+    background-color: white;
+    width: 57%;
+    margin: 0px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 37px 36px 0px 36px;
+}
+
+.benefits-block-separated div:last-child {
+    background-color: #55DFB4;
+    margin: 0px;
+    width: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits-block-3-img img {
+    height: 200px;
+    width: 250px;
+
+}

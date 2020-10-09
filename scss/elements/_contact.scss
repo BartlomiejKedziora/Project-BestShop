@@ -1,0 +1,125 @@
+/*contact*/
+
+.contact .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 360px 60px 360px;
+}
+
+.contact-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 100px;
+}
+
+.contact-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-info-header {
+    font-size: 49px;
+}
+
+.contact-info-cta {
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    margin-top: 22px;
+    margin-bottom: 42px;
+}
+
+.contact-info-details a {
+    color: var(--color-grey);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.contact-info-details img {
+    height: 27px;
+    width: 27px;
+}
+
+label {
+    color: var(--primary-color);
+    font-size: 11px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    line-height: 40px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact-form-space {
+    width: 100%;
+}
+
+.checkbox-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.contact-form-checkbox input {
+    height: 0;
+    width: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox-text {
+    font-size: 12px;
+    font-family: var(--secondary-font);
+    color: var(--color-grey);
+    text-align: left;
+    text-decoration: none;
+}
+
+.checkbox-label .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+}
+
+.checkbox-label input:checked ~ .checkbox {
+    background-image: url(../assets/Checkmark.svg);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.contact-form-btn {
+    padding: 20px 90px;
+    border: none;
+    border-radius: 35px;
+    color: white;
+    background-color: var(--primary-color);
+    font-family: var(--secondary-font);
+    font-size: 13px;
+    font-weight: bold;
+}   
+
+form button {
+    align-self: flex-end;
+}
