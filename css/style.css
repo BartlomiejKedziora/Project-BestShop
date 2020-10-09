@@ -246,6 +246,7 @@ a {
     width: 50%;
     margin-left: 36px;
     margin-right: 36px;
+    position: relative;
 }
 
 .benefits-block-header {
@@ -277,38 +278,46 @@ a {
     border-bottom: 4px solid #55DFB4;
 }
 
-.benefits-block-1-img img {
-    height: 350px;
+.benefits-block-img img {
+    position: relative;
+    z-index: 2;
     width: 350px;
-    object-fit: contain;
+    height: auto;
 }
 
-.benefits-block-2-img img {
-    height: 350px;
-    width: 350px;
-    object-fit: contain;
+.benefits-laptop .benefits-block-img {
+    margin: 50px 110px 40px 0px;
+
+}
+
+.benefits-laptop .benefits-block-img::before {
+    content: "";
+    display: block;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    background-color: #FB3B64 ;
+    border-radius: 40px;
+    transform: rotate(45deg);
+    top: -30px;
+    right: 0;
+}
+
+.benefits-phone .benefits-block-img {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #08A6E4;
+    margin: 30px 10px 20px 60px;
+
 }
 
 .benefits-block-3-img img {
     height: 350px;
     width: 350px;
     object-fit: contain;
-}
-
-.benefits-block-1-img {
-    height: 350px;
-    width: 350px;
-    background-color: #FB3B64 ;
-    border: none;
-    border-radius: 25%;
-}
-
-.benefits-block-2-img {
-    height: 350px;
-    width: 350px;
-    background-color: #08A6E4;
-    border: none;
-    border-radius: 50%;
 }
 
 .benefits-block-3-img {
@@ -352,13 +361,14 @@ a {
 /*pricing*/
 
 .pricing {
-    height: 600px;
+    height: 800px;
 }
 .pricing .container {
     height: 100%;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
+    margin: 0 100px;
 }
 
 .pricing-header {
@@ -372,6 +382,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 50px
 }
 
 .pricing-tables-frame1, .pricing-tables-frame2, .pricing-tables-frame3 {
@@ -381,7 +392,6 @@ a {
     border: 1px solid black;
     border-radius: 18px;
     padding-top: 34px;
-    position: relative;
 }
 
 .pricing-tables-pack {
@@ -399,7 +409,20 @@ a {
 .pricing-tables-limit {
     font-size: 12px;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 15px;
+}
+
+.pricing-tables-frame1 .pricing-tables-price {
+    margin-bottom: 65px;
+}
+
+.pricing-tables-frame2 .pricing-tables-limit {
+    margin-bottom: 70px;
+    margin-top: 25px;
+}
+
+.pricing-tables-frame3 .pricing-tables-limit {
+    margin-bottom: 40px;
 }
 
 .pricing-inlcusions li {
@@ -407,6 +430,23 @@ a {
     font-family: var(--secondary-font);
     margin-bottom: 25px;
 }
+
+li.incl::before {
+    content: "";
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    border: 1px solid #55DFB4;
+    background-image: url(../assets/Checkmark.svg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+li.not-incl::before {
+    border: 1px solid #FB3B64;
+    background-image: url(../assets/Close.svg);
+}    
 
 .pricing-btn {
     font-size: 13px;
@@ -417,7 +457,12 @@ a {
     border: none;
     border-radius: 23px;
     margin-top: 50px;
-    position: absolute;    
+    position: relative;
+    bottom: -45px;
+}
+
+.pricing-tables-frame2 .pricing-btn {
+    bottom: -95px;
 }
 
 .pricing-tables-frame1 {
@@ -430,9 +475,6 @@ a {
 
 .pricing-tables-frame1 a {
     background-color:  #FB3B64;
-    bottom: 0;
-    left: 0;
-    transform: translate(60%, 50%);
 }
 
 .pricing-tables-frame2 {
@@ -448,9 +490,6 @@ a {
 
 .pricing-tables-frame2 a {
     background-color:  #08A6E4;
-    bottom: 0;
-    left: 0;
-    transform: translate(75%, 50%);
 }
 
 .pricing-tables-frame3 {
@@ -463,9 +502,6 @@ a {
 
 .pricing-tables-frame3 a {
     background-color:#55DFB4;
-    bottom: 0;
-    left: 0;
-    transform: translate(60%, 50%);
 }
 
 /*contact*/
