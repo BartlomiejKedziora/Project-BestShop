@@ -5,7 +5,6 @@
 }
 .pricing .container {
     height: 100%;
-    width: auto;
     display: flex;
     flex-direction: column;
     margin: 0 100px;
@@ -28,10 +27,11 @@
 .pricing-tables-frame1, .pricing-tables-frame2, .pricing-tables-frame3 {
     text-align: center;
     height: 100%;
-    width: 370px;
+    width: 320px;
     border: 1px solid black;
     border-radius: 18px;
     padding-top: 34px;
+    margin: 0 30px;
 }
 
 .pricing-tables-pack {
@@ -120,7 +120,7 @@ li.not-incl::before {
 .pricing-tables-frame2 {
     border-color: #08A6E4 ;
     height: 120%;
-    width: 410px;
+    width: 350px;
     box-shadow: 5px 10px 27px var(--primary-color);
 }
 
