@@ -8,6 +8,10 @@
     display: flex;
     flex-direction: column;
     margin: 0 100px;
+
+    @media (max-width: 1200px) {
+    margin: 0 50px;
+    }
 }
 
 .pricing-header {
@@ -32,6 +36,10 @@
     border-radius: 18px;
     padding-top: 34px;
     margin: 0 30px;
+
+    @media (max-width: 1200px) {
+    margin: 0 10px;
+    }
 }
 
 .pricing-tables-pack {
