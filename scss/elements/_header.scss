@@ -1,15 +1,18 @@
 /*header,log, nav*/
 
 .page-header {
-    box-shadow: 0 3px 6px #00000029;
+    @media (max-width:800px) {
+        
+    }
 }
 
 .page-header .container {
-    height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 3px 6px #00000029;
+
 }
 
 .page-header-logo {
@@ -17,6 +20,70 @@
     color: var(--primary-color);
     font-weight: 300;    
     margin-left: 50px;
+    padding: 19px 0;
+}
+
+.hamburger {
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    @media (max-width:800px) {
+        display: inline-block;
+
+        &:hover {
+            .hamburger-content {
+                background-color: transparent;
+            }
+            .hamburger-content::before {
+                transform: translateY(10px) rotate(45deg);
+            }
+            .hamburger-content::after {
+                transform: translateY(-10px) rotate(-45deg);
+            }
+        }
+    }
+}
+
+.hamburger-box {
+    width: 34px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+
+}
+
+.hamburger-content {
+    @include hamburger-line;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+
+}
+
+.hamburger-content::before, .hamburger-content::after {
+    @include hamburger-line;
+    content: "";
+    right: 0;
+    transition: transform 0.5s;
+}
+
+.hamburger-content::before {
+    top: -10px;
+}
+
+
+.hamburger-content::after { 
+    top: 10px;
+}
+
+.page-header-nav {
+    @media (max-width:800px) {
+        display: none;
+    }
 }
 
 .page-header-nav-menu {
