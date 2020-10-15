@@ -10,3 +10,19 @@
     background-color: var(--primary-color);
     position: absolute;
 }
+
+@mixin red-form {
+    content: "";
+    display: block;
+    min-height: 140px;
+    max-height: 150px;
+    min-width: 140px;
+    max-width: 150px;
+    background-color: #FB3B64;
+    position: absolute;
+    z-index: 0;
+    left: 180px;
+    top: -20px;
+    transform: rotate(45deg);
+    border-radius: 40px;
+}

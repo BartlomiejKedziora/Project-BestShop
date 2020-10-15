@@ -8,9 +8,13 @@
     flex-direction: column;
     align-items: center;
     padding: 100px 250px;
+    @media (max-width: 1200px) {
+        padding: 30px 100px;
+    }
 }
 
 .benefits-block {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +32,11 @@
     width: 50%;
     margin-left: 36px;
     margin-right: 36px;
+
+    @media (max-width: 1200px) {
+        width: 100%;
+        padding: 25px 20px;
+    }
 }
 
 .benefits-block-img {
@@ -69,7 +78,7 @@
     }
 }
 
-.benefits-block-greenline {
+.benefits .benefits-block-separated .benefits-block-greenline {
     width: 75%;
     display: block;
     border-bottom: 4px solid #55DFB4;
@@ -82,36 +91,42 @@
 .benefits-block-img img {
     position: relative;
     z-index: 2;
-    width: 350px;
+    width: 300px;
     height: auto;
 }
 
 .benefits-laptop .benefits-block-img {
     margin: 50px 110px 40px 0px;
+    position: relative;
 
+    @media (max-width: 1200px) {
+        margin: 25px auto;
+    }
 }
 
-.benefits-laptop .benefits-block-img::before {
-    content: "";
-    display: block;
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    background-color: #FB3B64 ;
-    border-radius: 40px;
-    transform: rotate(45deg);
-    top: -30px;
-    right: 0;
+.benefits-laptop .benefits-block-img-mobile::before {
+    @include red-form;
 }
+
+.benefits-laptop .benefits-img-out::before {
+    @include red-form;
+}
+
 
 .benefits-phone .benefits-block-img {
-    content: "";
     display: block;
     width: 300px;
     height: 300px;
     border-radius: 50%;
     background-color: #08A6E4;
     margin: 30px 10px 20px 60px;
+    
+    @media (max-width: 1200px) {
+        margin-bottom: 20px;
+        margin-left: 10px;
+        width: 220px;
+        height: 220px;
+    }
 
 }
 
@@ -137,6 +152,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 }
 
@@ -148,6 +164,11 @@
     display: flex;
     flex-direction: column;
     padding: 37px 36px 0px 36px;
+    @media (max-width: 1200px) {
+        width: 100%;
+        height: auto;
+        padding: 25px 20px;
+    }
 }
 
 .benefits-block-separated div:last-child {
@@ -157,10 +178,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 1200px) {
+        width: 100%;
+    }
 }
 
 .benefits-block-3-img img {
     height: 200px;
     width: 250px;
 
+}
+
+.benefits-laptop .benefits-block-img-mobile {
+    display: none;
+    @media (max-width: 1200px) {
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+.benefits-laptop .benefits-img-out {
+    @media (max-width: 1200px) {
+        display: none;
+    }
 }
