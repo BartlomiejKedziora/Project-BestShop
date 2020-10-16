@@ -142,12 +142,20 @@
     border-radius: 50%;
     background-color: #08A6E4;
     margin: 30px 10px 20px 60px;
+    padding-top: 25px;
+    padding-left: 10px;
+
+    &:hover {
+        background-color:  #FB3B64;
+        transition: 3s;
+    }
     
     @media (max-width: 1200px) {
         margin-bottom: 20px;
         margin-left: 10px;
         width: 220px;
         height: 220px;
+        padding: 0;
     }
     @media (max-width: 600px) {
         width: 160px;

@@ -230,6 +230,12 @@ a {
   text-decoration: none;
   padding: 22px 150px;
   box-shadow: 5px 10px 14px var(--shadow-color);
+  transition: 0.5s;
+}
+.banner-btn:hover {
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 @media (max-width: 460px) {
   .banner-btn {
@@ -315,6 +321,38 @@ a {
   margin: 0 auto;
   position: relative;
 }
+.stats-data-1-circle:hover {
+  -webkit-animation: pulse 2s linear;
+          animation: pulse 2s linear;
+}
+@-webkit-keyframes pulse {
+  25% {
+    transform: scale(2);
+    background-color: yellow;
+  }
+  50% {
+    transform: scale(1.5);
+    background-color: #FB3B64;
+  }
+  75% {
+    transform: scale(2);
+    background-color: yellow;
+  }
+}
+@keyframes pulse {
+  25% {
+    transform: scale(2);
+    background-color: yellow;
+  }
+  50% {
+    transform: scale(1.5);
+    background-color: #FB3B64;
+  }
+  75% {
+    transform: scale(2);
+    background-color: yellow;
+  }
+}
 
 .stats-data-1-icon {
   position: absolute;
@@ -330,6 +368,56 @@ a {
   margin: 0 auto;
   position: relative;
 }
+.stats-data-2-circle:hover {
+  -webkit-animation: flash 3s infinite;
+          animation: flash 3s infinite;
+}
+@-webkit-keyframes flash {
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  25.003% {
+    opacity: 1;
+  }
+  39% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.3;
+  }
+  45.003% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  25.003% {
+    opacity: 1;
+  }
+  39% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.3;
+  }
+  45.003% {
+    opacity: 1;
+  }
+}
 
 .stats-data-2-icon {
   position: absolute;
@@ -344,6 +432,38 @@ a {
   border-radius: 50%;
   margin: 0 auto;
   position: relative;
+}
+.stats-data-3-circle:hover {
+  -webkit-animation: rotate 1.5s infinite normal linear;
+          animation: rotate 1.5s infinite normal linear;
+}
+@-webkit-keyframes rotate {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .stats-data-3-icon {
@@ -545,6 +665,12 @@ a {
   border-radius: 50%;
   background-color: #08A6E4;
   margin: 30px 10px 20px 60px;
+  padding-top: 25px;
+  padding-left: 10px;
+}
+.benefits-phone .benefits-block-img:hover {
+  background-color: #FB3B64;
+  transition: 3s;
 }
 @media (max-width: 1200px) {
   .benefits-phone .benefits-block-img {
@@ -552,6 +678,7 @@ a {
     margin-left: 10px;
     width: 220px;
     height: 220px;
+    padding: 0;
   }
 }
 @media (max-width: 600px) {
@@ -849,6 +976,20 @@ li.not-incl::before {
   position: relative;
   bottom: -45px;
 }
+@media (min-width: 801px) {
+  .pricing-btn:hover {
+    padding: 26px 84px;
+    border-radius: 35px;
+    font-size: 16px;
+    transition: 0.5s;
+  }
+}
+@media (max-width: 1200px) {
+  .pricing-btn {
+    margin-top: 0;
+    bottom: -90px;
+  }
+}
 @media (max-width: 800px) {
   .pricing-btn {
     margin-top: 0;
@@ -860,6 +1001,12 @@ li.not-incl::before {
 
 .pricing-tables-frame2 .pricing-btn {
   bottom: -95px;
+}
+@media (max-width: 1200px) {
+  .pricing-tables-frame2 .pricing-btn {
+    margin-top: 0;
+    bottom: -145px;
+  }
 }
 @media (max-width: 800px) {
   .pricing-tables-frame2 .pricing-btn {
@@ -1067,6 +1214,12 @@ input {
   font-family: var(--secondary-font);
   font-size: 13px;
   font-weight: bold;
+  transition: 0.5s;
+}
+.contact-form-btn:hover {
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 form button {

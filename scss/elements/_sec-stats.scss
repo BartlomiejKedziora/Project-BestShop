@@ -64,6 +64,26 @@
     border-radius: 50%;
     margin: 0 auto;
     position: relative;
+
+    &:hover {
+        animation: pulse 2s linear;
+
+        @keyframes pulse {
+            25% {
+                transform: scale(2);
+                background-color: yellow;
+            }
+            50% {
+                transform: scale(1.5);
+                background-color: #FB3B64;
+            }
+            75% {
+                transform: scale(2);
+                background-color: yellow;
+            }
+            
+        }
+    }
 }
 
 .stats-data-1-icon {
@@ -79,6 +99,35 @@
     border-radius: 50%;
     margin: 0 auto;
     position: relative;
+
+    &:hover {
+        animation: flash 3s infinite;
+
+        @keyframes flash {
+            20% {
+                opacity: 1;
+            }
+            25% {
+                opacity: 0.3;
+            }
+            25.003% {
+                opacity: 1;
+            }
+            39% {
+                opacity: 0.3;
+            }
+            40% {
+                opacity: 1;
+            }
+            45% {
+                opacity: 0.3;
+            }
+            45.003% {
+                opacity: 1;
+            }
+            
+        }
+    }
 }
 
 .stats-data-2-icon {
@@ -94,6 +143,25 @@
     border-radius: 50%;
     margin: 0 auto;
     position: relative;
+
+    &:hover {
+        animation: rotate 1.5s infinite normal linear;
+
+        @keyframes rotate {
+            25% {
+                transform: rotate(90deg);
+            } 
+            50% {
+                transform: rotate(180deg);
+            }  
+            75% {
+                transform: rotate(270deg);
+            }  
+            100% {
+                transform: rotate(360deg);
+            }             
+        }
+    }
 }
 
 .stats-data-3-icon {

@@ -153,6 +153,13 @@ input {
     font-family: var(--secondary-font);
     font-size: 13px;
     font-weight: bold;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: white;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+    }
 }   
 
 form button {
