@@ -17,6 +17,9 @@
     @media (max-width: 1200px) {
     margin: 0 50px;
     }
+    @media (max-width: 460px) {
+        margin: 0 40px;
+        }
 }
 
 .pricing-header {
@@ -28,6 +31,10 @@
     @media (max-width:800px) {
         margin-top: 60px;
         margin-bottom: 20px;
+    }
+    @media (max-width:460px) {
+        margin-top: 50px;
+        margin-bottom: 15px;
     }
 }
 
@@ -66,6 +73,10 @@
         height: 300px;
         padding-top: 50px;
     }
+
+    @media (max-width: 1200px) {
+        margin: 0 10px 40px;
+            }
 }
 
 div.pricing-tables-frame2 {

@@ -65,6 +65,9 @@ a {
 @media (max-width: 800px) {
   .hamburger {
     display: inline-block;
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
   }
   .hamburger:hover .hamburger-content {
     background-color: transparent;
@@ -82,7 +85,6 @@ a {
   height: 24px;
   display: inline-block;
   position: relative;
-  margin-right: 20px;
 }
 
 .hamburger-content {
@@ -176,7 +178,6 @@ a {
 }
 /*banner*/
 .banner {
-  height: 842px;
   display: flex;
 }
 @media (max-width: 800px) {
@@ -199,11 +200,22 @@ a {
   margin-top: 130px;
   margin-bottom: 20px;
 }
+@media (max-width: 460px) {
+  .banner-title {
+    margin-top: 100px;
+  }
+}
 
 .banner-text {
   font-family: var(--secondary-font);
   font-size: 16px;
   margin-bottom: 38px;
+  text-align: center;
+}
+@media (max-width: 460px) {
+  .banner-text {
+    margin: 0 50px 28px;
+  }
 }
 
 .banner-btn {
@@ -218,6 +230,11 @@ a {
   text-decoration: none;
   padding: 22px 150px;
   box-shadow: 5px 10px 14px var(--shadow-color);
+}
+@media (max-width: 460px) {
+  .banner-btn {
+    padding: 20px 90px;
+  }
 }
 
 .banner-img {
@@ -249,7 +266,14 @@ a {
 }
 @media (max-width: 800px) {
   .stats-header {
-    margin: 60px 0px 30px 0px;
+    padding: 60px 100px 30px 100px;
+    margin: 0;
+  }
+}
+@media (max-width: 460px) {
+  .stats-header {
+    font-size: 30px;
+    padding: 50px 35px 30px 35px;
   }
 }
 
@@ -274,7 +298,7 @@ a {
 }
 @media (max-width: 800px) {
   .stats-data-1, .stats-data-2, .stats-data-3 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
@@ -351,7 +375,17 @@ a {
 }
 @media (max-width: 1200px) {
   .benefits .container {
-    padding: 30px 100px;
+    padding: 40px 100px;
+  }
+}
+@media (max-width: 600px) {
+  .benefits .container {
+    padding: 40px 50px;
+  }
+}
+@media (max-width: 460px) {
+  .benefits .container {
+    padding: 40px 30px;
   }
 }
 
@@ -400,6 +434,11 @@ a {
   font-family: var(--secondary-font);
   margin-bottom: 50px;
 }
+@media (max-width: 800px) {
+  .benefits-block-content {
+    margin-bottom: 30px;
+  }
+}
 
 .benefits-block-redline {
   width: 75%;
@@ -440,6 +479,11 @@ a {
   width: 300px;
   height: auto;
 }
+@media (max-width: 600px) {
+  .benefits-block-img img {
+    width: 200px;
+  }
+}
 
 .benefits-laptop .benefits-block-img {
   margin: 50px 110px 40px 0px;
@@ -465,6 +509,17 @@ a {
   top: -20px;
   transform: rotate(45deg);
   border-radius: 40px;
+}
+@media (max-width: 600px) {
+  .benefits-laptop .benefits-block-img-mobile::before {
+    min-height: 100px;
+    max-height:  110px;
+    min-width: 100px;
+    max-width:  110px;
+    left: 110px;
+    top: -20px;
+    border-radius: 30px;
+  }
 }
 
 .benefits-laptop .benefits-img-out::before {
@@ -499,12 +554,11 @@ a {
     height: 220px;
   }
 }
-
-.benefits-block-3-img img {
-  height: 350px;
-  width: 350px;
-  -o-object-fit: contain;
-     object-fit: contain;
+@media (max-width: 600px) {
+  .benefits-phone .benefits-block-img {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 .benefits-block-3-img {
@@ -560,8 +614,21 @@ a {
 }
 
 .benefits-block-3-img img {
+  padding-top: 20px;
   height: 200px;
   width: 250px;
+}
+@media (max-width: 800px) {
+  .benefits-block-3-img img {
+    height: 160px;
+    width: 200px;
+  }
+}
+@media (max-width: 460px) {
+  .benefits-block-3-img img {
+    height: 130px;
+    width: 160px;
+  }
 }
 
 .benefits-laptop .benefits-block-img-mobile {
@@ -571,6 +638,17 @@ a {
   .benefits-laptop .benefits-block-img-mobile {
     display: block;
     margin: 20px auto;
+    padding-right: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .benefits-laptop .benefits-block-img-mobile {
+    padding-right: 250px;
+  }
+}
+@media (max-width: 460px) {
+  .benefits-laptop .benefits-block-img-mobile {
+    padding-right: 200px;
   }
 }
 
@@ -601,6 +679,11 @@ a {
     margin: 0 50px;
   }
 }
+@media (max-width: 460px) {
+  .pricing .container {
+    margin: 0 40px;
+  }
+}
 
 .pricing-header {
   text-align: center;
@@ -612,6 +695,12 @@ a {
   .pricing-header {
     margin-top: 60px;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 460px) {
+  .pricing-header {
+    margin-top: 50px;
+    margin-bottom: 15px;
   }
 }
 
@@ -652,6 +741,11 @@ a {
     flex-wrap: wrap;
     height: 300px;
     padding-top: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .pricing-tables-frame1, .pricing-tables-frame2, .pricing-tables-frame3 {
+    margin: 0 10px 40px;
   }
 }
 
@@ -894,6 +988,7 @@ li.not-incl::before {
   height: 27px;
   width: 27px;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 @media (max-width: 850px) {
   .contact-info-details img {
