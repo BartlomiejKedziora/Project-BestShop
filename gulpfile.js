@@ -31,6 +31,7 @@ function watch(cb) {
     gulp.watch("./scss/**/*.scss", gulp.series(css));
     gulp.watch("./*.html").on('change', browserSync.reload);
     cb();
+    //gulp.watch("entryPath" + "/js/*.js", gulp.series(reload));
 }
 
 module.exports.default = gulp.series(server, css, watch);

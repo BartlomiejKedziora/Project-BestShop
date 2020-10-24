@@ -146,7 +146,7 @@ input {
 
 .contact-form-btn {
     padding: 20px 90px;
-    border: none;
+    border: 1px solid var(--primary-color);
     border-radius: 35px;
     color: white;
     background-color: var(--primary-color);
@@ -157,7 +157,6 @@ input {
 
     &:hover {
         background-color: white;
-        border: 1px solid var(--primary-color);
         color: var(--primary-color);
     }
 }   
