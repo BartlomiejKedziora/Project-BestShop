@@ -158,15 +158,15 @@
       <h2 class="calc-header">Calculate how much you’ll pay</h2>
       <div class="calc-fields">
         <form class="calc-form">
-          <div class="calc-input">
-            <label for="number">Products quantity</label>
+          <div class="calc-input-box">
+            <label for="number"></label>
             <input type="number" class="calc-input" placeholder="Products quantity">
           </div>
-          <div class="calc-input">
-            <label for="number">Estimated orders in month</label>
+          <div class="calc-input-box">
+            <label for="number"></label>
             <input type="number" class="calc-input" placeholder="Estimated orders in month">
           </div>
-          <div class="calc-select">
+          <div class="calc-select-box">
             <div class="calc-select-default">Choose package</div>
             <ul class="calc-select-list">
               <li class="calc-select-option">Basic</li>
@@ -174,51 +174,55 @@
               <li class="calc-select-option">Premium</li>
             </ul>
           </div>
-          <label class="calc-checkbox-label">
+          <div class="calc-checkbox">
+            <label class="calc-checkbox-label">
             <input type="checkbox">
             <span class="checkbox"></span>
             <p class="calc-checkbox-text">Accounting</p>
-          </label>
-          <label class="calc-checkbox-label">
+            </label>
+          </div>
+          <div class="calc-checkbox">
+            <label class="calc-checkbox-label">
             <input type="checkbox">
             <span class="checkbox"></span>
             <p class="calc-checkbox-text">Rental of a payment terminal</p>
-          </label>
+            </label>
+          </div>
         </form>
-      </div>
-      <div class="calc-summary">
-        <ul class="calc-summary-list">
-          <li class="calc-summary-item">
-            <span class="item-name">Products</span>
-            <span class="item-quantity">1 * $0.5</span>
-            <span class="item-price">$0.5</span>
-          </li>
-          <li class="calc-summary-item">
-            <span class="item-name">Orders</span>
-            <span class="item-quantity">1 * $0.25</span>
-            <span class="item-price">$0.25</span>
-          </li>
-          <li class="calc-summary-item">
-            <span class="item-name">Package</span>
-            <span class="item-quantity">Basic</span>
-            <span class="item-price">$0</span>
-          </li>
-          <li class="calc-summary-item">
-            <span class="item-name">Accounting</span>
-            <span class="item-quantity"></span>
-            <span class="item-price">$35</span>
-          </li>
-          <li class="calc-summary-item">
-            <span class="item-name">Terminal</span>
-            <span class="item-quantity"></span>
-            <span class="item-price">$5</span>
-          </li>
-          <li class="calc-summary-total">
-            <span class="item-name">Total</span>
-            <span class="total-price">$40.75</span>
-          </li>
-        </ul>
-      </div>
+        <div class="calc-summary">
+          <ul class="calc-summary-list">
+            <li class="calc-summary-item">
+              <span class="item-name">Products</span>
+              <span class="item-quantity">1 * $0.5</span>
+              <span class="item-price">$0.5</span>
+            </li>
+            <li class="calc-summary-item">
+              <span class="item-name">Orders</span>
+              <span class="item-quantity">1 * $0.25</span>
+              <span class="item-price">$0.25</span>
+            </li>
+            <li class="calc-summary-item">
+              <span class="item-name">Package</span>
+              <span class="item-quantity">Basic</span>
+              <span class="item-price">$0</span>
+            </li>
+            <li class="calc-summary-item">
+              <span class="item-name">Accounting</span>
+              <span class="item-quantity"></span>
+              <span class="item-price">$35</span>
+            </li>
+            <li class="calc-summary-item">
+              <span class="item-name">Terminal</span>
+              <span class="item-quantity"></span>
+              <span class="item-price">$5</span>
+            </li>
+            <li class="calc-summary-total">
+              <span class="item-name">Total</span>
+              <span class="total-price">$40.75</span>
+            </li>
+          </ul>
+        </div>
+      </div> 
     </section>
 
     <section class="contact" id="contact">

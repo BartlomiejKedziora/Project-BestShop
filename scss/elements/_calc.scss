@@ -1,0 +1,172 @@
+.calc .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calc-header {
+    font-size: 36px;
+    font-family: var(--primary-font);
+    text-align: center;
+    margin: 87px 0 50px 0;
+}
+
+.calc-fields {
+    max-width: 865px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    @media (max-width:1024px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.calc-form {
+    width: 50%;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    
+    @media (max-width:1024px) {
+        margin-right: 0;
+    }
+}
+
+.calc-summary {
+    width: 50%;
+    margin-left: 25px;
+    margin-bottom: 20px;
+
+    @media (max-width:1024px) {
+        margin-left: 0;
+    }
+}
+
+.calc-summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #55DFB4;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.item-name, .item-quantity {
+    font-size: 14px;
+    font-family: var(--secondary-font);
+    color: white;
+    padding: 6px 20px;
+}
+
+.item-price {
+    font-size: 18px;
+    font-family: var(--secondary-font);
+    padding: 4px 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.total-price {
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    color: white;
+}
+
+.calc-summary-total {
+    background-color: #08A6E4;
+    border-radius: 6px;
+    align-self: flex-end;
+    padding: 6px 15px 6px 0;
+}
+
+.calc-summary-list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.calc-input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #08A6E4;
+    border-radius: 6px;
+    padding: 11px 20px;
+    margin-bottom: 20px;
+    color: #A5A5A5;
+    font-size: 13px;
+    font-family: var(--secondary-font);
+
+}
+
+.calc-select-default {
+    width: 100%;
+    outline: none;
+    border: 1px solid #08A6E4;
+    border-radius: 6px;
+    padding: 11px 20px;
+    margin-bottom: 20px;
+    color: #A5A5A5;
+    font-size: 13px;
+    font-family: var(--secondary-font);
+}
+
+.calc-select-list {
+    width: 100%;
+    outline: none;
+    border: 1px solid  #FB3B64;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    color: black;
+    font-size: 13px;
+    font-family: var(--secondary-font);
+}
+
+.calc-select-option:nth-child(2) {
+    padding: 15px 0;
+}
+
+.calc-checkbox-label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.calc-checkbox input {
+    height: 0;
+    width: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+.calc-checkbox-text {
+    font-size: 12px;
+    font-family: var(--secondary-font);
+    color: #707070;
+    text-align: left;
+    text-decoration: none;
+    padding: 10px 35px;
+}
+
+.calc-checkbox-label .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+}
+
+.calc-checkbox-label input:checked ~ .checkbox {
+    background-image: url(../assets/Checkmark.svg);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}

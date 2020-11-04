@@ -83,7 +83,7 @@
     }
 }
 
-label {
+.contact-form label {
     color: var(--primary-color);
     font-size: 11px;
     font-weight: bold;
@@ -91,7 +91,7 @@ label {
     text-transform: uppercase;
 }
 
-input {
+.contact-form input {
     border: none;
     border-bottom: 1px solid var(--color-grey);
     line-height: 40px;
@@ -161,6 +161,6 @@ input {
     }
 }   
 
-form button {
+.contact-form-btn {
     align-self: flex-end;
 }
