@@ -121,14 +121,18 @@
     border: 1px solid  #FB3B64;
     border-radius: 6px;
     margin-bottom: 20px;
+}
+
+.calc-select-option {
     padding: 10px 20px;
     color: black;
     font-size: 13px;
     font-family: var(--secondary-font);
 }
 
-.calc-select-option:nth-child(2) {
-    padding: 15px 0;
+.calc-select-option:hover {
+    background-color: #d6d6d6;
+    cursor: pointer;
 }
 
 .calc-checkbox-label {
@@ -169,4 +173,24 @@
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
+}
+
+.checkbox:hover {
+    background-color:#d6d6d6
+}
+
+.calc-select-list-show {
+    display: none;
+}
+
+.calc-select-default:hover {
+    cursor: pointer;
+}
+
+.summary-products-show, .summary-order-show, .summary-package-show, .summary-account-show, .summary-terminal-show {
+    display: none;
+}
+
+.summary-total-show {
+    display: none;
 }
