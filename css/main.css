@@ -1083,6 +1083,11 @@ li.not-incl::before {
     align-items: center;
   }
 }
+@media (max-width: 850px) {
+  .calc-fields {
+    width: 100vw;
+  }
+}
 
 .calc-form {
   width: 50%;
