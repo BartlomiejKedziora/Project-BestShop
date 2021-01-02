@@ -9,4 +9,4 @@ Calculator and mobile menu are built with JavaScript.
 
 ## Other information
 
-Project is created as a part of Front-end cours. 
+Project is created as a part of Front-end course. 
